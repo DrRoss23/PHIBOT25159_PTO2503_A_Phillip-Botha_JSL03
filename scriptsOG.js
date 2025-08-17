@@ -34,6 +34,7 @@ let lastId = tasks.length; // Start with 3 because there are 3 initial tasks
 // Allow user to add up to 3 new tasks
 // ---------------------------
 for (let i = 0; i < 3; i++) {
+  // i = Index for new tasks & i++ increases the index
   // Prompt user for task details
   let title = prompt("Enter task title:");
   let description = prompt("Enter task description:");
@@ -57,6 +58,11 @@ for (let i = 0; i < 3; i++) {
 
   // Add the new task to the tasks array
   tasks.push(task);
+  if (i === 2) {
+    alert(
+      "There are enough tasks on your board, please check them in the console"
+    );
+  }
 }
 
 // ---------------------------
