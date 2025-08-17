@@ -68,4 +68,22 @@ for (let i = 0; i < 3; i++) {
 // ---------------------------
 // Log all tasks to the console
 // ---------------------------
+
 console.log("All Tasks:", tasks);
+
+// ---------------------------
+// Function to get completed tasks
+// ---------------------------
+// This function filters the tasks array and returns only the tasks with status "done".
+// It also logs the completed tasks to the console with a clear label.
+function getCompletedTasks() {
+  // Use filter to create a new array with only completed tasks
+  const completedTasks = tasks.filter(function (task) {
+    return task.status === "done";
+  });
+  // Log the completed tasks to the console
+  console.log("Completed Tasks:", completedTasks);
+}
+
+// Call the function so the user can immediately see completed tasks after the script runs
+getCompletedTasks();
