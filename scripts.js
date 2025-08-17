@@ -86,8 +86,9 @@ function getCompletedTasks() {
   const completedTasks = tasks.filter(function (task) {
     return task.status === "done";
   });
-  // Log the completed tasks to the console
-  console.log("Completed Tasks:", completedTasks);
+  // Log the completed tasks to the console with a clearer header
+  console.log("----- Completed Tasks -----");
+  console.log(completedTasks);
 }
 
 // Call the function so the user can immediately see completed tasks after the script runs
