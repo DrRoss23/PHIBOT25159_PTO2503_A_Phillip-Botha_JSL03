@@ -32,14 +32,10 @@ This project builds on JSL02 by expanding the task management system. Users can 
 
 ```
 ├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── scripts.js
+├── styles.css
+├── scripts.js
 ├── assets/
 │   └── (favicon, icons, fonts)
-├── explainer-images/
-│   └── console log.png
 └── README.md
 ```
 
