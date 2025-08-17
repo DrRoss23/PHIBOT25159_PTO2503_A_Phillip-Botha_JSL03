@@ -39,6 +39,11 @@ for (let i = 0; i < 3; i++) {
   let description = prompt("Enter task description:");
   let status = prompt("Enter task status (todo, doing, done):").toLowerCase();
 
+  while (status !== "todo" && status !== "doing" && status !== "done") {
+    alert("Invalid status. Please enter 'todo', 'doing', or 'done'.");
+    status = prompt("Enter task status (todo, doing, done):").toLowerCase();
+  }
+
   // Increment lastId for each new task
   lastId++;
 
