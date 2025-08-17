@@ -66,10 +66,15 @@ for (let i = 0; i < 3; i++) {
 }
 
 // ---------------------------
-// Log all tasks to the console
+// Function to log all tasks
 // ---------------------------
+// This function logs all tasks to the console with a clear label.
+function logAllTasks() {
+  console.log("All Tasks:", tasks);
+}
 
-console.log("All Tasks:", tasks);
+// Call the function to log all tasks
+logAllTasks();
 
 // ---------------------------
 // Function to get completed tasks
